@@ -52,9 +52,9 @@ public class NaaelPracticeTest		// Replace "Template"with your specific class na
 		IBIO.output("Minimum = " + min);
 		IBIO.output("Range = " + (max-min)); 
 		IBIO.output("Average = " + (sum/n));
-		for(int i=2; i <= max; i++)
+		for(int i=2; i < max; i++)
 		{
-			if(i<max)
+			if(i>max)
 			{
 				t = 1;
 			}
@@ -76,6 +76,7 @@ public class NaaelPracticeTest		// Replace "Template"with your specific class na
 			IBIO.output("Is the maximum a prime? True");
 		}
 		IBIO.output("[End]");
+		
 	}
 }
 
