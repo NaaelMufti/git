@@ -75,8 +75,7 @@ public class NaaelPracticeTest		// Replace "Template"with your specific class na
 		else{
 			IBIO.output("Is the maximum a prime? True");
 		}
-		IBIO.output("[End]");
-		
+		IBIO.output("[End]");	
 	}
 }
 
