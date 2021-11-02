@@ -1,5 +1,4 @@
 
-
 public class WhileCh3 {
 	
 	public static void main (String[] args) 
@@ -19,9 +18,10 @@ public class WhileCh3 {
 		if ( i == x)
 		{
 			IBIO.output(x + " is prime");
-			System.exit(1);
+		} else // or could do system.exit//
+		{
+			IBIO.output(x + " is divisible by " + i);
 		}
-		IBIO.output(x + " is divisible by " + i);
+		
 	}
 }
-
