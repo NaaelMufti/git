@@ -10,6 +10,7 @@ public class PracticeTest2
 		long term;
 		long n;
 		long maxterm;
+		long total = 1;
 		
 		do
 		{ n= IBIO.inputInt("Calculate up to which term? "); 
@@ -37,9 +38,12 @@ public class PracticeTest2
 				{
 					term = first + second;
 					IBIO.out("; " + term);
+					total = first+second;
 					first = second; 
 					second = term;
+					total = total+term;	
 				}
+				IBIO.out(total);
 			}
 		}else
 		{
