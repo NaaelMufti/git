@@ -14,6 +14,26 @@ public class formatting {
 				IBIO.out(" ");
 			}
 			IBIO.output(x);
+		int a=IBIO.inputInt("Enter a number: ");
+			if (a < 10)
+			{
+				IBIO.out(" ");
+			}
+			if (a < 100)
+			{
+				IBIO.out(" ");
+			}
+			IBIO.output(a);
+		int n=IBIO.inputInt("Enter a number: ");
+			if (n < 10)
+			{
+				IBIO.out(" ");
+			}
+			if (n < 100)
+			{
+				IBIO.out(" ");
+			}
+			IBIO.output(n);
 	}
 }
 
