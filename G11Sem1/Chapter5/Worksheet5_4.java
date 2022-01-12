@@ -1,6 +1,5 @@
 
-
-public class Pr5_4
+public class Worksheet5_4
 {
 	
 	public static void main (String[] args)
