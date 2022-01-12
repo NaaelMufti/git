@@ -30,12 +30,6 @@ public class RecCircleTest
 			circlere(radius - 1);
 			Thread.sleep(1000);
 			StdDraw.circle(middleX, middleY, radius);
-		
-		/* if(radius == 0)		// stop when radius reaches 0
-		{	return;
-		} else
-		{	circlere(radius-1); // call the method with a smaller radius
-		} */
 	}
 
 	/* Part 2: this recursive method draws
