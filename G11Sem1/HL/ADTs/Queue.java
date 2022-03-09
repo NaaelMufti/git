@@ -1,15 +1,19 @@
-public class Queue {
+
+public class Queue 
+{
 	NodeString head;
 	NodeString tail;
-	public boolean isEmptyy()
+	
+	public boolean isEmpty()
 	{
 		return head == null;
 	}
+	
 	public void enqueue(String n)
 	{
 		NodeString newNode = new NodeString(); // create a node to endqueue
 		newNode.data = n;  // place the data in the new node
-		if( isEmptyy() )
+		if( isEmpty() )
 		{
 			head = newNode;
 			tail = newNode;
@@ -23,7 +27,7 @@ public class Queue {
 	}
 	public String dequeue()
 	{
-		if( !isEmptyy() )
+		if( !isEmpty() )
 		{	String n = head.data;
 			head = head.next;
 			return n;
@@ -31,9 +35,25 @@ public class Queue {
 		return null;
 	} 
 	
-	public static void main (String[] args) {
+	public void printQueue()
+	{
+		NodeString temp = head;
+		System.out.println("head");
+		while(temp != null)
+		{
+			System.out.println(temp.data);
+			temp = temp.next;
+		}
+
+		System.out.println("null");
+	}
+
+	
+	public static void main (String[] args) 
+	{
 		Queue newQueue = new Queue();
 		newQueue.enqueue("Hello");
-		System.out.println(newQueue.dequeue());
+		newQueue.printQueue();
 	}
 }
+
