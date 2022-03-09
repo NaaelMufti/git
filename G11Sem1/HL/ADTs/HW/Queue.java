@@ -33,8 +33,10 @@ public class Queue {
 	
 	public static void main (String[] args) {
 		Queue newQueue = new Queue();
-		newQueue.enqueue("Im ");
-		System.out.println(newQueue.dequeue());
+		newQueue.enqueue("Hello");
+		newQueue.enqueue(" There");
+		System.out.print(newQueue.dequeue());
+		System.out.print(newQueue.dequeue());
 	}
 }
 
