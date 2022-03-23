@@ -27,6 +27,18 @@ public class Ch9
 		{
 			IBIO.output(i + ": " + rolls[i]);
 		}
+		
+		for (int r = 0; r <= MAXSIDES; r++)
+		{
+			for(int c = 0; c < rolls.length; c++)
+			{
+				if(rolls[c] == r)
+				{
+					System.out.print(r);
+				}
+			}
+			System.out.println();
+		}
 	}
 }
 

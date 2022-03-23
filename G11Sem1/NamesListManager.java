@@ -1,7 +1,10 @@
 /*
  * 6.3.2, 6.3.3, 6.3.5 from ArraysChapt9 textbook for next test
  * seperators maybe
- * 
+ * arrays textbook, algorithms that act on an array (page 16)
+ * average 
+ * first test is processing the array
+ * second is like this with manipulting the array
  * 
  * NamesListManager.java
  * 
@@ -112,9 +115,10 @@ public class NamesListManager
 	private final static int MAXSIZE = 10;
 	private static int lastIndex = 0;
 	
-	public static boolean isFull()
+	public static boolean isFull(String[] a)
 	{
-		return lastIndex == MAXSIZE;
+		return lastIndex == a.length;
+	// following code does the same purpose: 
 	/*	if (lastIndex == MAXSIZE)
 	 *		return true;
 	 *	else
@@ -135,29 +139,50 @@ public class NamesListManager
 	public static void add(String[] a, String data)
 	{
 		// this method will add data (a String) at the end of the array (the first free index)
-		printArray(a);
+		if (!isFull(a))
+		{
+			a[lastIndex] = data;
+			lastIndex++;
+				
+			printArray(a);
+		} else
+		{
+			System.out.println("Error");
+		}
 	}
 	
 	public static int search(String[] a, String data)
 	{
 		// this method will return the index where the data (a String) is found, or -1 if not found
+		// use array textbook in Chap 9 folder
+		
+		for (int i = 0; i < lastIndex; i++)
+		{
+			if( a[i].equalsIgnoreCase(data)) //IgnoreCase ignores capital letters 
+			{
+				return i; 
+			} 
+		}
 		return -1;
 	}
 	
 	public static void remove(String[] a, String data)
 	{
 		int indexToRemove = search(a, data);
+		// write code that will copy/move up the contents of the array by one index to remove the element
+		
 		if( indexToRemove == -1)
 		{	System.out.printf("%s not found.\n", data);
-		} else {
-			// write code that will copy/move up the contents of the array by one index to remove the element
+		} else 
+		{
+			
 			printArray(a);
 		}
 	}
 	
 	public static void insert(String[] a, String data, int index)
 	{
-		if( isFull() == true )
+		if( isFull(a) == true )
 			System.out.println("Error - array full");
 		else {
 			lastIndex++;
