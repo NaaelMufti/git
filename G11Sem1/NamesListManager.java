@@ -177,7 +177,7 @@ public class NamesListManager
 		{
 			for (int i = indexToRemove + 1; i < lastIndex; i++) 
 			{
-				a.data[i - 1] = a.data[i]; //error in code don't know why
+				a[i - 1] = a[i]; 
 			}
 			lastIndex--;
 			printArray(a);
