@@ -175,7 +175,11 @@ public class NamesListManager
 		{	System.out.printf("%s not found.\n", data);
 		} else 
 		{
-			
+			for (int i = indexToRemove + 1; i < lastIndex; i++) 
+			{
+				a.data[i - 1] = a.data[i]; //error in code don't know why
+			}
+			lastIndex--;
 			printArray(a);
 		}
 	}
