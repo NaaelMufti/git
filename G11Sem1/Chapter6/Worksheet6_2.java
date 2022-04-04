@@ -14,6 +14,7 @@ public class Worksheet6_2
 			IBIO.output(star(i));
 		}
 	}
+	
 	static String star(int n)
 	{ 
 		String output = "";
