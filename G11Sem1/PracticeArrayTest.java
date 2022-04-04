@@ -86,16 +86,22 @@ public class PracticeArrayTest
 	public static double mode(double[] array)
 	{
 		double mode = 0;
+		double tempcount = 0;
 		// Mode: the code for your method (function) goes here
 		for(int a = 0; a < array.length; a++)
 		{
-			int counter = 0;
+			double counter = 0;
 			for (int b = 0; b < array.length; b++)
 			{
 				if ( array[a] == array[b])
 				{
 					counter = counter + 1;
 				}
+			}
+			if (counter > tempcount)
+			{
+				tempcount = counter;
+				mode = array[a];
 			}
 		// should have something here, only works for first element 
 		}
