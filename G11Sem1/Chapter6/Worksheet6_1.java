@@ -2,16 +2,8 @@
 public class Worksheet6_1
 {
 	
-	public static String spaces(int howmany) // adds spaces before the squares
-	{
-		String s = ""; // initialise String s to empty
-		for(int i = 0; i < howmany; i++)
-		{
-			s = s + " ";
-		}
-		return s;
-	}
-	// returns a String with howMany number of *
+
+
 	public static String stars(int howmany)
 	{
 		String s = ""; // initialise String s to empty
@@ -29,7 +21,7 @@ public class Worksheet6_1
 		String line = stars(num);
 		for (int i = 0; i < num; i++)
 		{
-			IBIO.output(spaces(num) + line);
+			IBIO.output(line);
 		}
 	}
 }
