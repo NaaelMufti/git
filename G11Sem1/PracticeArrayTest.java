@@ -44,11 +44,11 @@ public class PracticeArrayTest
 	}
 	//------------------------------------------------------------------
 	
-	public static double secmax(double[] array)
+	public static double secmax(double[] array, double max)
 	{
 		double secmax = array[0];
 		
-		double max2 = array[0];
+		/*double max2 = array[0];
 		for(int i = 0; i < array.length; i++)
 		{
 			if (array[i] > max2)
@@ -56,20 +56,21 @@ public class PracticeArrayTest
 				max2 = array[i];
 			}
 		}
-		
+		*/
+		// only use if not set as parameter
 		
 		for (int i = 0; i < array.length; i++)
 		{
-			if (array[i] == max2)
+			if (array[i] == max)
 			{
-				secmax = secmax;
+				secmax = secmax; //unncessary but still works, can use not equal to
 			}
 			else
 			{
 				if(array[i] > secmax)
 				{
 					secmax = array[i];
-				}
+				} 
 			}
 		}
 		
@@ -77,10 +78,10 @@ public class PracticeArrayTest
 	}
 	//------------------------------------------------------------------
 	
-	public static double thirdmax(double[] array)
+	public static double thirdmax(double[] array, double secmax, double max)
 	{
 		double thirdmax = array[0];
-		
+		/*
 		double maxtemp2 = array[0];
 		double maxtemp1 = array[0];
 		for(int i = 0; i < array.length; i++)
@@ -105,14 +106,16 @@ public class PracticeArrayTest
 				}
 			}
 		}
+		*/
+		//only use if not set as parameter 
 		
 		for (int i = 0; i < array.length; i++)
 		{
-			if (array[i] == maxtemp1)
+			if (array[i] == max)
 			{
 				thirdmax = thirdmax;
 			}
-			else if (array[i] == maxtemp2)
+			else if (array[i] == secmax)
 			{
 				thirdmax = thirdmax;
 			} else
@@ -227,8 +230,8 @@ public class PracticeArrayTest
 		System.out.println( "Measurements   : " + size(rainfall) );
 		System.out.println( "Minimum   (0.2): " + min(rainfall) );
 		System.out.println( "Maximum (765.9): " + max(rainfall) );
-		System.out.println( "Secmax  (lmao): " + secmax(rainfall) );
-		System.out.println( "Thirdmax (lmao lmao): " + thirdmax(rainfall));
+		System.out.println( "Secmax  (609.0): " + secmax(rainfall, max(rainfall)) );
+		System.out.println( "Thirdmax (600.9): " + thirdmax(rainfall, secmax(rainfall, max(rainfall)), max(rainfall)) );
 		System.out.printf( "Range   (765.7): %.2f\n", range(rainfall) );
 		System.out.printf( "Average(178.89): %.2f\n", average(rainfall) ); //could printf just to make 2dp like range
 		System.out.println( "Mode    (127.2): " + mode(rainfall) );
