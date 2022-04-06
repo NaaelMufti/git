@@ -191,6 +191,27 @@ public class PracticeArrayTest
 		return mode;
 	}
 	//------------------------------------------------------------------
+	
+	public static void printArray(double[] array)
+	{
+		for(int i = 0; i < array.length; i++)
+		{
+			System.out.println(array[i]);
+		}
+	}
+	//------------------------------------------------------------------
+	
+	public static void printSeperators(double[] array)
+	{
+		for(int i = 0; i < array.length; i++)
+		{
+			if( i > 0)
+			{
+				System.out.print(" | ");
+			}
+			System.out.print(array[i]);
+		}
+	}
 	//------------------------------------------------------------------
 
 	public static void main (String args[]) throws IOException
@@ -225,6 +246,8 @@ public class PracticeArrayTest
 		System.out.println( "Median   (27.7): " + median(temperature) );
 
 		System.out.println();
+		System.out.println("---------------------------------");
+		printSeperators(rainfall);
 	}
 
 	//------------------------------------------
