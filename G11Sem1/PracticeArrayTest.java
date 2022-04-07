@@ -1,5 +1,6 @@
 /*
- *	Practical Test #2 IB Computer Science MDV: Arrays, statistics
+ * top 3 value and bottom 3 values without sorting
+ * Practical Test #2 IB Computer Science MDV: Arrays, statistics
  */
 import java.util.*;
 import java.io.*;
