@@ -149,40 +149,62 @@ public class Q3Practical
 		int max = a[0];
 		for (int j = 1; j < howMany; j++)
 		{
-				for (int i = 0; i < a.length; i++)
+			for (int i = 0; i < a.length; i++)
+			{
+				if (a[i] == temp)
 				{
-					if(a[i] > max)
-					{
-						if(a[i] < temp)
-						{
-							largest = a[i];
-						}
-					}
+					break;
 				}
+				else
+				{
+					if(a[i] > largest)
+					{
+						largest = a[i];
+					}	
+				}
+			}
 			temp = largest;
 			System.out.println(largest);
 		}
-		/*
-		for (int i = 0; i < array.length; i++)
-		{
-			if (array[i] == max)
-			{
-				secmax = secmax; //unncessary but still works, can use not equal to
-			}
-			else
-			{
-				if(array[i] > secmax)
-				{
-					secmax = array[i];
-				} 
-			}
-		}
-		*/
+		
 	}
 	
 	public static void smallest(int[] a, int howMany)
 	{
 		// YOUR CODE GOES HERE
+		int smallest = a[0];
+		int temp = a[0];
+		// Maximum: the code for your method (function) goes here
+		for(int i = 0; i < a.length; i++)
+		{
+			if (a[i] > temp)
+			{
+				temp = a[i];
+			}
+		}
+		// making new variable, where temp is maximum
+		System.out.println(temp);
+		
+		int max = a[0];
+		for (int j = 1; j < howMany; j++)
+		{
+			for (int i = 0; i < a.length; i++)
+			{
+				if (a[i] == temp)
+				{
+					break;
+				}
+				else
+				{
+					if(a[i] < smallest)
+					{
+						smallest = a[i];
+					}	
+				}
+			}
+			temp = smallest;
+			System.out.println(smallest);
+		}
 	}	
 	
 	
