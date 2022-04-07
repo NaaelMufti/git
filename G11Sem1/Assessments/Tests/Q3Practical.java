@@ -102,6 +102,17 @@ public class Q3Practical
 	public static boolean isUnique(int[] a)
 	{
 		// REPLACE THE LINE BELOW WITH YOUR CODE
+		
+		for (int i = 0; i < a.length; i++)
+		{
+			for(int j = 0; j < a.length; j++)
+			{
+				if(a[i] == a[j])
+				{
+					return true;
+				}
+			}
+		}
 		return false;
 	}
 	
@@ -150,10 +161,13 @@ public class Q3Practical
 		System.out.println( "Array has only unique elements (true): " + isUnique(numbers) );
 		System.out.println();
 		System.out.print( "How many largest and smallest numbers to find (2~20)? " );
-		int howMany = 0;
-		// INPUT HOWMANY BELOW, AND VALIDATE THE INPUT PROPERLY
-		inputInt("How many largest and smallest numbers to find in the array: ");
 		
+		// INPUT HOWMANY BELOW, AND VALIDATE THE INPUT PROPERLY
+		int howMany = inputInt("How many largest and smallest numbers to find in the array: ");
+		while (howMany > 20 || howMany < 1)
+		{
+			howMany = inputInt("Error- enter a number between 1 and 20: ");
+		}
 		
 		
 		largest(numbers, howMany);
