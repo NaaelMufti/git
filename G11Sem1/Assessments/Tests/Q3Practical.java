@@ -133,35 +133,33 @@ public class Q3Practical
 	{
 		// YOUR CODE GOES HERE
 		
-		int max = a[0];
-		
-		for(int i = 0; i < a.length; i++)
-		{
-			if (a[i] > max)
-			{
-				max = a[i];
-			}
-		}
-		
 		int largest = a[0];
 		int temp = a[0];
-		for (int j = 0; j < howMany; j++)
+		// Maximum: the code for your method (function) goes here
+		for(int i = 0; i < a.length; i++)
 		{
-			if (temp > largest)
+			if (a[i] > temp)
 			{
-				temp = temp;
+				temp = a[i];
 			}
-			else
-			{
+		}
+		// making new variable, where temp is maximum
+		System.out.println(temp);
+		
+		int max = a[0];
+		for (int j = 1; j < howMany; j++)
+		{
 				for (int i = 0; i < a.length; i++)
 				{
-					if (a[i] > largest)
+					if(a[i] > max)
 					{
-						largest = a[i];
+						if(a[i] < temp)
+						{
+							largest = a[i];
+						}
 					}
 				}
-				temp = largest;
-			}
+			temp = largest;
 			System.out.println(largest);
 		}
 		/*
