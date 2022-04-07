@@ -132,6 +132,54 @@ public class Q3Practical
 	public static void largest(int[] a, int howMany)
 	{
 		// YOUR CODE GOES HERE
+		
+		int max = a[0];
+		
+		for(int i = 0; i < a.length; i++)
+		{
+			if (a[i] > max)
+			{
+				max = a[i];
+			}
+		}
+		
+		int largest = a[0];
+		int temp = a[0];
+		for (int j = 0; j < howMany; j++)
+		{
+			if (temp > largest)
+			{
+				temp = temp;
+			}
+			else
+			{
+				for (int i = 0; i < a.length; i++)
+				{
+					if (a[i] > largest)
+					{
+						largest = a[i];
+					}
+				}
+				temp = largest;
+			}
+			System.out.println(largest);
+		}
+		/*
+		for (int i = 0; i < array.length; i++)
+		{
+			if (array[i] == max)
+			{
+				secmax = secmax; //unncessary but still works, can use not equal to
+			}
+			else
+			{
+				if(array[i] > secmax)
+				{
+					secmax = array[i];
+				} 
+			}
+		}
+		*/
 	}
 	
 	public static void smallest(int[] a, int howMany)
