@@ -44,7 +44,93 @@ public class PracticeArrayTest
 		return max;
 	}
 	//------------------------------------------------------------------
+	
+	public static double secmax(double[] array, double max)
+	{
+		double secmax = array[0];
+		
+		/*double max2 = array[0];
+		for(int i = 0; i < array.length; i++)
+		{
+			if (array[i] > max2)
+			{
+				max2 = array[i];
+			}
+		}
+		*/
+		// only use if not set as parameter
+		
+		for (int i = 0; i < array.length; i++)
+		{
+			if (array[i] == max)
+			{
+				secmax = secmax; //unncessary but still works, can use not equal to
+			}
+			else
+			{
+				if(array[i] > secmax)
+				{
+					secmax = array[i];
+				} 
+			}
+		}
+		
+		return secmax;
+	}
+	//------------------------------------------------------------------
+	
+	public static double thirdmax(double[] array, double secmax, double max)
+	{
+		double thirdmax = array[0];
+		/*
+		double maxtemp2 = array[0];
+		double maxtemp1 = array[0];
+		for(int i = 0; i < array.length; i++)
+		{
+			if (array[i] > maxtemp1)
+			{
+				maxtemp1 = array[i];
+			}
+		}
 
+		for (int i = 0; i < array.length; i++)
+		{
+			if (array[i] == maxtemp1)
+			{
+				maxtemp2 = maxtemp2;
+			}
+			else
+			{
+				if(array[i] > maxtemp2)
+				{
+					maxtemp2 = array[i];
+				}
+			}
+		}
+		*/
+		//only use if not set as parameter 
+		
+		for (int i = 0; i < array.length; i++)
+		{
+			if (array[i] == max)
+			{
+				thirdmax = thirdmax;
+			}
+			else if (array[i] == secmax)
+			{
+				thirdmax = thirdmax;
+			} else
+			{
+				if (array[i] > thirdmax)
+				{
+					thirdmax = array[i];
+				}
+			}
+		}
+		return thirdmax;
+		
+	}
+	//------------------------------------------------------------------
 	public static double range(double[] array)
 	{
 		// Range: the code for your method (function) goes here
@@ -109,6 +195,27 @@ public class PracticeArrayTest
 		return mode;
 	}
 	//------------------------------------------------------------------
+	
+	public static void printArray(double[] array)
+	{
+		for(int i = 0; i < array.length; i++)
+		{
+			System.out.println(array[i]);
+		}
+	}
+	//------------------------------------------------------------------
+	
+	public static void printSeperators(double[] array)
+	{
+		for(int i = 0; i < array.length; i++)
+		{
+			if( i > 0)
+			{
+				System.out.print(" | ");
+			}
+			System.out.print(array[i]);
+		}
+	}
 	//------------------------------------------------------------------
 
 	public static void main (String args[]) throws IOException
@@ -124,6 +231,8 @@ public class PracticeArrayTest
 		System.out.println( "Measurements   : " + size(rainfall) );
 		System.out.println( "Minimum   (0.2): " + min(rainfall) );
 		System.out.println( "Maximum (765.9): " + max(rainfall) );
+		System.out.println( "Secmax  (609.0): " + secmax(rainfall, max(rainfall)) );
+		System.out.println( "Thirdmax (600.9): " + thirdmax(rainfall, secmax(rainfall, max(rainfall)), max(rainfall)) );
 		System.out.printf( "Range   (765.7): %.2f\n", range(rainfall) );
 		System.out.printf( "Average(178.89): %.2f\n", average(rainfall) ); //could printf just to make 2dp like range
 		System.out.println( "Mode    (127.2): " + mode(rainfall) );
@@ -141,6 +250,8 @@ public class PracticeArrayTest
 		System.out.println( "Median   (27.7): " + median(temperature) );
 
 		System.out.println();
+		System.out.println("---------------------------------");
+		printSeperators(rainfall);
 	}
 
 	//------------------------------------------
