@@ -4,6 +4,12 @@
  * Java programming practical test
  * Topic: Arrays, algorithms, problem solving
  * 
+ * 
+ * Exam Topics:
+ * 
+ * Disadvantages and advantages of binary search (that it can only be done with sorted)
+ * 
+ * 
  */
 import java.util.*;
 
