@@ -8,6 +8,7 @@
  * Don't need to know insert, add, remove algorithms
  * compare to/equals
  * sortings
+ * modifying searching algorithms (understand each part)
  * 
  * 
  * Exam Topics:
