@@ -4,6 +4,11 @@
  * Java programming practical test
  * Topic: Arrays, algorithms, problem solving
  * 
+ * Test:
+ * Don't need to know insert, add, remove algorithms
+ * compare to/equals
+ * sortings
+ * 
  * 
  * Exam Topics:
  * 
