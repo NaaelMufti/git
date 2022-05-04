@@ -8,7 +8,22 @@
  * Exam Topics:
  * 
  * Disadvantages and advantages of binary search (that it can only be done with sorted)
- * 
+ * s1.compareTo(s2) > 0 = s1 > s2
+ * s1.compareTo(s2) < 0 = s1 < s2
+ * s1.compareTo(s2) = 0 = s1 == s2
+ * trace stacks, feel like rec ursion but not
+ * as many questions abt tracing as he could
+ * alrdy table headings given
+ * no 2D arrays, put all abstract data types
+ * linked list, add and pop something out of linked lists
+ * LL is about LL and array interacting, do not have size or length
+ * array not known length
+ * IB past paper questions
+ * adv disadv queue vs stack 
+ * bubble sort and binary search, one trace and one code
+ * swap a[i], a[i+1]; (pseudo code)
+ * CHAPTER 4 (STRESS)
+ * FLOW CHART TRACING	
  * 
  */
 import java.util.*;
