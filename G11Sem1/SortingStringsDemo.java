@@ -150,7 +150,7 @@ public class SortingStringsDemo
 		int location = -1;	// not found
 		int lower = 0;		// index of lowest element to check
 		int upper = array.length - 1; // index of last element to check
-		System.out.println("\tlower index: " + lower + " upper index: " + upper + " midpoint: "+ (lower+upper)/2 );
+		// System.out.println("\tlower index: " + lower + " upper index: " + upper + " midpoint: "+ (lower+upper)/2 );
 		while( lower <= upper )
 		{	//c++;
 			int mid = (lower + upper) / 2;
@@ -162,7 +162,7 @@ public class SortingStringsDemo
 			} else if( key.compareTo(array[mid]) > 0) // this could also be a plain else
 			{	lower = mid + 1;
 			}
-			System.out.println("\tl: " + lower + " u: " + upper + " m: "+ mid);
+			// System.out.println("\tl: " + lower + " u: " + upper + " m: "+ mid);
 		}
 		//System.out.println("Comparisons: " + c);
 		return location;
