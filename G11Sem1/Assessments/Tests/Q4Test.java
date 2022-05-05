@@ -92,7 +92,7 @@ public class Q4Test
 		int location = -1;	// not found
 		int lower = 0;		// index of lowest element to check
 		int upper = array.length - 1; // index of last element to check
-		// System.out.println("\tlower index: " + lower + " upper index: " + upper + " midpoint: "+ (lower+upper)/2 );
+		
 		while( lower <= upper )
 		{	//c++;
 			int mid = (lower + upper) / 2;
@@ -104,14 +104,18 @@ public class Q4Test
 			} else if( key.compareTo(array[mid]) > 0) // this could also be a plain else
 			{	lower = mid + 1;
 			}
-			// System.out.println("\tl: " + lower + " u: " + upper + " m: "+ mid);
+			
 		}
-		//System.out.println("Comparisons: " + c);
-		if(isSortedAsc(array) == false && isSortedDesc(array) == false)
+		
+		if (isSortedAsc(array) == true || isSortedDesc(array) == true)
 		{
+			return location;
+		}
+		else
+		{
+			bubble(array);
 			return -2;
 		}
-		return location;
 	}
 
 	public static boolean isSortedAsc(String[] array)
@@ -153,14 +157,16 @@ public class Q4Test
 		if (isSortedAsc(array) == true)
 		{
 			bSorted = "ascending";
-			System.out.print(bSorted);
 			printArray(array);
 			
 		}
-		if( isSortedDesc(array) == true)
+		else if( isSortedDesc(array) == true)
 		{
 			bSorted = "descending";
-			System.out.print(bSorted);
+			printArray(array);
+		}
+		else
+		{
 			printArray(array);
 		}
 			return bSorted;
