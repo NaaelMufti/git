@@ -83,7 +83,8 @@ public class SortingStringsDemo
 	*/
 	
 	public static int linearSearch(String[] array, String key)
-	{	int c = 0;
+	{	
+		int c = 0;
 		int loc = -1;	// not found
 		for(int i = 0; i < array.length; i++)
 		{

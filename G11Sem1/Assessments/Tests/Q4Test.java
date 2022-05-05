@@ -72,27 +72,73 @@ public class Q4Test
 	
 	public static int linearSearch(String[] array, String key)
 	{
-		int location = -1;
-		// your code goes here
-		return location;
+		int c = 0;
+		int loc = -1;	// not found
+		for(int i = 0; i < array.length; i++)
+		{
+			c++;
+			if(key == array[i])
+			{
+				loc = i;
+				break;
+			}
+		}
+		return loc; // returns index, if position to location + 1
 	}
 
 	public static int binarySearch(String[] array, String key)
 	{
-		int location = -1;	// not found
-		// your code goes here
+		//int c = 0;
+		int location = -2;	// not found
+		int lower = 0;		// index of lowest element to check
+		int upper = array.length - 1; // index of last element to check
+		// System.out.println("\tlower index: " + lower + " upper index: " + upper + " midpoint: "+ (lower+upper)/2 );
+		while( lower <= upper )
+		{	//c++;
+			int mid = (lower + upper) / 2;
+			if( array[mid] == key )
+			{	location = mid;
+				break; // key found, exit while loop/stop searching
+			} else if( key.compareTo(array[mid]) < 0)
+			{	upper = mid - 1;
+			} else if( key.compareTo(array[mid]) > 0) // this could also be a plain else
+			{	lower = mid + 1;
+			}
+			// System.out.println("\tl: " + lower + " u: " + upper + " m: "+ mid);
+		}
+		//System.out.println("Comparisons: " + c);
 		return location;
 	}
 
 	public static boolean isSortedAsc(String[] array)
 	{
-		// your code goes here, you may want/need to modify the line below, too
+		int lastIndex = array.length;
+		
+		for(int i = 0; i < lastIndex-1; i++)
+		{
+			if(array[i] != null && array[i+1] != null)
+			{
+				if(array[i].compareTo(array[i+1]) > 0)
+				{	return false;
+				}
+			}
+		}
 		return true;
 	}
 	
 	public static boolean isSortedDesc(String[] array)
 	{
-		// your code goes here, you may want/need to modify the line below, too
+		int lastIndex = array.length;
+		
+		for(int i = 0; i < lastIndex-1; i++)
+		{
+			if(array[i] != null && array[i+1] != null)
+			{
+				if(array[i].compareTo(array[i+1]) < 0)
+				{	return false;
+				}
+			}
+		}
 		return true;
 	}
 
