@@ -12,8 +12,8 @@ public class SortingStringsDemo
 		bubbleSort(second);
 		printArray(second);
 		
-		int location = linearSearch(original, "Bob");
-		System.out.println(location);
+		int location = binarySearch(original, "Bob");
+		System.out.println("Binary: " + location);
 		
 		selectionSort(original);
 		printArray(original);
