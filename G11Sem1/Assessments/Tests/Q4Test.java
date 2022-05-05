@@ -88,7 +88,6 @@ public class Q4Test
 
 	public static int binarySearch(String[] array, String key)
 	{
-		//int c = 0;
 		int location = -1;	// not found
 		int lower = 0;		// index of lowest element to check
 		int upper = array.length - 1; // index of last element to check
@@ -106,16 +105,24 @@ public class Q4Test
 			}
 			
 		}
+		// commented code from here is attempts at getting step 9 //
+		
+		// System.out.println(location);
 		
 		if (isSortedAsc(array) == true || isSortedDesc(array) == true)
 		{
 			return location;
 		}
-		else
+		else 
 		{
-			bubble(array);
+			//System.out.println(2);
+			//bubble(array);
+			//binarySearch(array, key);
+			//return location;
 			return -2;
 		}
+		
+		
 	}
 
 	public static boolean isSortedAsc(String[] array)
@@ -169,12 +176,13 @@ public class Q4Test
 		{
 			printArray(array);
 		}
-			return bSorted;
+		return bSorted;
 	}
 	
 	public static void main(String[] args)
 	{
-		System.out.println("Naael Mufti");
+		System.out.println("Ronald MacDonald (Naael Mufti)");
+		System.out.println();
 		
 		// DO NOT MODIFY THE CODE BELOW THIS COMMENT!!! ////// POLICE LINE DO NOT CROSS //////////////////////////////////////////////////////////////////////
 		String[] original = { "dulcie","ernest","vasilis","juanita","saraann","torin","mathian","stanly","georgetta","dalis","taddeo","haroun","clyde","wake","hilary","mallory","prinz","carolin","barton","garnette","hanson","reina","bernice","carmela","drusie","ermentrude","abbey","lene","casey","kahaleel","glennie","kim","afton","wenda","prince","maddalena","nickey","elijah","ashlin","dex","morrie","alvin","jammal","andrej","liza","benedikt","hillard","manon","robby","cari","jilly","carlyn","isa","reg","lincoln","basilio","avivah","jamie","chandal","bourke","heloise","midge","fernandina","gasper","sterling","jemmy","rosco","ardella","curcio","kitti","jamey","alejandrina","kimmie","hervey","hurley","joice","gisele","isac","armin","drusie","edyth","carlie","con","neddie","augustine","loraine","sloan","tilda","meggy","walther","averyl","marshall","meridel","tanny","merry","sibilla","carin","linnie","edy","clayson","zelig","imogene","amandie" };
