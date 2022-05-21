@@ -107,27 +107,6 @@ public class SortingStrings
 		}
 		System.out.println("Comparisons: " + c);
 	}
-
-	// a couple of ways to visualise the insertion sort:
-	// https://youtu.be/OGzPmgsI-pQ
-	// https://youtu.be/JU767SDMDvA
-	public static void insertionSort(int[] array)
-	{	int c = 0;
-		int len = array.length;
-		for(int i = 1; i < array.length; i++)
-		{
-			int temp = array[i];
-			int j = i-1;
-			while(j >= 0 && array[j] > temp)
-			{	c++;
-				array[j+1] = array[j];
-				j--;
-			}
-			array[j+1] = temp;
-			System.out.print("\t>>> ");	printArray(array);
-		}
-		System.out.println("Comparisons: " + c);
-	}
 	
 	public static int linearSearch(int[] array, int key)
 	{	int c = 0;
@@ -174,8 +153,8 @@ public class SortingStrings
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-		String[] original = { kevin, john, bill, jack, sharma, mufti, kabir};
-		String[] array = clone(original);
+		int[] original = { 7,9,6,8,1,3,5,2,4 };
+		int[] array = clone(original);
 		System.out.println("Original array");
 		printArray(original);
 
@@ -206,7 +185,7 @@ public class SortingStrings
 		printArray(array);
 
 		System.out.print("\nSearching algorithms\nEnter element to search for: ");
-		int key = input.nextString();
+		int key = input.nextInt();
 		System.out.println("\nLinear search");
 		int location = linearSearch(array, key);
 		if(location == -1)

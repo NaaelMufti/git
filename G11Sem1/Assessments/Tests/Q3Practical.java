@@ -9,27 +9,53 @@
  * compare to/equals
  * sortings
  * modifying searching algorithms (understand each part)
- * 
+ * s1.compareTo(s2) > 0 = s1 > s2
+ * s1.compareTo(s2) < 0 = s1 < s2
+ * s1.compareTo(s2) = 0 = s1 == s2
  * 
  * Exam Topics:
  * 
  * Disadvantages and advantages of binary search (that it can only be done with sorted)
- * s1.compareTo(s2) > 0 = s1 > s2
- * s1.compareTo(s2) < 0 = s1 < s2
- * s1.compareTo(s2) = 0 = s1 == s2
- * trace stacks, feel like rec ursion but not
+ * trace stacks, feel like recursion but not
  * as many questions abt tracing as he could
  * alrdy table headings given
  * no 2D arrays, put all abstract data types
- * linked list, add and pop something out of linked lists
- * LL is about LL and array interacting, do not have size or length
+ * HL -linked list, add and pop something out of linked lists
+ * HL - LL is about LL and array interacting, do not have size or length
  * array not known length
- * IB past paper questions
+ * made up mostly of IB past paper questions
  * adv disadv queue vs stack 
  * bubble sort and binary search, one trace and one code
  * swap a[i], a[i+1]; (pseudo code)
  * CHAPTER 4 (STRESS)
  * FLOW CHART TRACING	
+ * how OS provides security (username security encription)
+ * up to 2.1.8
+ * situational questions not definitons 
+ * advantages and disadvantages of things
+ * very little about how cpu works
+ * much more on OS
+ * wireless networking lots
+ * vpn lots
+ * things around them (eg connecting to vpn using WAN)
+ * tracing algorithms
+ * no question on comparing packet switching and circuit switching
+ * no 4.1? (not sure if right)
+ * flow chart for us to trace (should be familiar with the algorithm so don't overthink)
+ * write more algorithms then before (java or pseudocode)
+ * HL - diagrams, bring small ruler (have to draw also)
+ * HL - stacks are used to store function calls, not assessed on recursion but similar cuz of stacks
+ * HL - whats the use of a stack/queue or why use stack instead of queue
+ * OSI model (pneumonic: something about singapore passports)
+ * ask a question where you will need to know what a router is and what function it can provide
+ * why would you choose a router as oppose to a switch when setting up network
+ * dont talk about just wireless routers
+ * nothing about VLANS but VPN like crazy
+ * nothing about the TCP/IP model
+ * just know TCP and IP being other protocols
+ * asking between 2 algorithms and which is more efficient (count number of cycles?)
+ * networking with the OSI model as a reference
+ * when tracing bubble sort, each step is one whole parce not just one swap
  * 
  */
 import java.util.*;
