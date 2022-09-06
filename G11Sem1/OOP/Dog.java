@@ -27,8 +27,7 @@ public class Dog extends Animal
     }
 
     public void setAgeInDogYears()
-    {
-        this.ageInDogYears = this.calculateAgeInDogYears();
+    {   this.ageInDogYears = this.calculateAgeInDogYears();
     }
 
     public int calculateAgeInDogYears()
@@ -45,4 +44,13 @@ public class Dog extends Animal
         return super.toString() +
                 " | ageInDogYears=" + ageInDogYears;
     }
+
+    public void talk()
+    {   System.out.println("Bow wow Guau guau");
+    }
+    
+    public void eat()
+    {
+		System.out.println("Chomp");
+	}
 }
