@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d5aac84-4750-4206-b7fe-fb52e40464d2" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/FractionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HL/Chapter 11/src/Fraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HL/Chapter 11/src/FractionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HL/Chapter 11/src/IBIO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/IBIO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/G12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/G12.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -70,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662965320390</updated>
       <workItem from="1662965323814" duration="6000" />
-      <workItem from="1663039932056" duration="2390000" />
+      <workItem from="1663039932056" duration="2264000" />
     </task>
     <servers />
   </component>
