@@ -4,6 +4,7 @@ import java.util.Scanner;
 If method A has to call exception
 And method B calls method A
 method B must also have throws Exception and with same type of Exception
+bonk
 */
 public class FractionTest
 {
