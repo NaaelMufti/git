@@ -65,19 +65,11 @@ public class Time
         }
         out = (out + this.getHours() + ":");
         if(this.getMinutes() < 10)
-    }
-    /*
-    public String toString()
-    {   String output ="";
-        if(this.getHours() < 10)
-        {   output = output + "0";
+        {
+            out = "0" + out;
         }
-        output = output + this.getHours() + ":";
-        if(this.getMinutes() < 10)
-        {   output = output + "0";
-        }
-        output = output + this.getMinutes();
-        return output;
+        out = (out + this.getMinutes());
+        return out;
     }
-     */
+    
 }
