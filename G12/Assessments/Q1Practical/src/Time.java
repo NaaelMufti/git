@@ -37,4 +37,47 @@ public class Time
     {
         this.minutes = minutes;
     }
+
+    public int toMinutes()
+    {
+        return this.getHours()*60 + this.getMinutes();
+    }
+
+    public boolean equals(Time another)
+    {   boolean result = false;
+        if(this.toMinutes() == another.toMinutes())
+        {   result = true;
+        }
+        return result;
+    }
+
+    public int compareTo(Time another)
+    {
+        return this.toMinutes() - another.toMinutes();
+    }
+
+    public String toString()
+    {
+        String out = "";
+        if(this.getHours() < 10)
+        {
+            out = "0" + out;
+        }
+        out = (out + this.getHours() + ":");
+        if(this.getMinutes() < 10)
+    }
+    /*
+    public String toString()
+    {   String output ="";
+        if(this.getHours() < 10)
+        {   output = output + "0";
+        }
+        output = output + this.getHours() + ":";
+        if(this.getMinutes() < 10)
+        {   output = output + "0";
+        }
+        output = output + this.getMinutes();
+        return output;
+    }
+     */
 }
