@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d5aac84-4750-4206-b7fe-fb52e40464d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FractionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HL/Chapter 11/src/Fraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HL/Chapter 11/src/FractionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HL/Chapter 11/src/IBIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IBIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/G12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/G12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HL/BST-OOP/src/BNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HL/BST-OOP/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HL/BST-OOP/src/StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/Practice/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/Practice/src/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP/AnimalTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/AnimalTesting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +39,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/naael/Desktop/School/IB/Comp Sci /git/G12&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="FractionTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FractionTest" />
@@ -71,6 +71,11 @@
       <updated>1662965320390</updated>
       <workItem from="1662965323814" duration="6000" />
       <workItem from="1663039932056" duration="2390000" />
+      <workItem from="1664944275319" duration="48000" />
+      <workItem from="1664944342053" duration="4000" />
+      <workItem from="1664944371273" duration="452000" />
+      <workItem from="1664974018745" duration="9000" />
+      <workItem from="1665016335241" duration="557000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,14 @@
 import java.util.Date;
+/* no inheritance in test
+   math.abs
+   something numerical
+   code one class with multiple methods
+   for some results cast to double
+   something we are familiar with
+   overriding only done with inheritance
+   no multiplicity
 
+ */
 public class AnimalTesting
 {
     public static void main(String[] args)
