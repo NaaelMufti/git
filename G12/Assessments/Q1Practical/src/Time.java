@@ -9,13 +9,14 @@ public class Time
     }
 
     public Time(int m)
-    {   this.hours = 0;
-        this.setMinutes(m);
+    {
+        this.hours = 0;
+        this.setMinutes(Math.abs(m));
     }
 
     public Time(int h, int m)
-    {   this.setHours(h);
-        this.setMinutes(m);
+    {   this.setHours(Math.abs(h));
+        this.setMinutes(Math.abs(m));
     }
 
     public int getHours()
@@ -42,14 +43,15 @@ public class Time
     public void setMinutes(int minutes)
     {
         Math.abs(minutes);
-        if (minutes > 60)
+        int tempHours = hours;
+        if (minutes >= 60)
         {
-
+            tempHours = tempHours + (minutes / 60);
+            minutes = (minutes % 60);
         }
         this.minutes = minutes;
+        this.setHours(tempHours);
     }
-
-    
 
     public int toMinutes()
     {
@@ -64,6 +66,13 @@ public class Time
         return result;
     }
 
+    /*
+    could do equals like this:
+    public boolean equals (Time another)
+    {
+        return this.toMinutes() == another.toMinutes();
+    }
+     */
     public int compareTo(Time another)
     {
         return this.toMinutes() - another.toMinutes();
@@ -74,12 +83,12 @@ public class Time
         String out = "";
         if(this.getHours() < 10)
         {
-            out = "0" + out;
+            out = out + "0";
         }
         out = (out + this.getHours() + ":");
         if(this.getMinutes() < 10)
         {
-            out = "0" + out;
+            out = out + "0";
         }
         out = (out + this.getMinutes());
         return out;
