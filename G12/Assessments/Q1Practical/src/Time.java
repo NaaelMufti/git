@@ -23,8 +23,14 @@ public class Time
         return hours;
     }
 
+
     public void setHours(int hours)
     {
+        Math.abs(hours);
+        if (hours > 23)
+        {
+            hours = hours % 24;
+        }
         this.hours = hours;
     }
 
@@ -35,8 +41,15 @@ public class Time
 
     public void setMinutes(int minutes)
     {
+        Math.abs(minutes);
+        if (minutes > 60)
+        {
+
+        }
         this.minutes = minutes;
     }
+
+    
 
     public int toMinutes()
     {
@@ -71,5 +84,5 @@ public class Time
         out = (out + this.getMinutes());
         return out;
     }
-    
+
 }
