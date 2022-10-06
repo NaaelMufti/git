@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5aac84-4750-4206-b7fe-fb52e40464d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HL/BST-OOP/src/BNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HL/BST-OOP/src/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HL/BST-OOP/src/StudentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP/Practice/src/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP/Practice/src/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP/AnimalTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/AnimalTesting.java" afterDir="false" />
-    </list>
+    <list default="true" id="7d5aac84-4750-4206-b7fe-fb52e40464d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +67,7 @@
       <workItem from="1664944342053" duration="4000" />
       <workItem from="1664944371273" duration="452000" />
       <workItem from="1664974018745" duration="9000" />
-      <workItem from="1665016335241" duration="557000" />
+      <workItem from="1665016335241" duration="609000" />
     </task>
     <servers />
   </component>
