@@ -2,6 +2,7 @@ public class Animal
 {
     private String name;
     private int yearOfBirth;
+    private boolean isAlive;
 
     public Animal() { }
 
@@ -23,6 +24,7 @@ public class Animal
     public void setYearOfBirth(int yearOfBirth)
     {   this.yearOfBirth = yearOfBirth;
     }
+
 
     @Override
     public String toString()

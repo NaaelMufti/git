@@ -22,11 +22,14 @@
  * IA -> is technical documentation, comments things like that
  *
  * Semester Exam: Problem with inheritence is if error in super class, trickle down to subclasses
+ * Only like 5 marks for BSTs, around same length as past paper on hw site
  * Paper 2, fill up with 1.2, nothing on networking, most of it on OOP
  * Possible question? : impact of open standards and protocols -> wouldn't have internet without it.
  * IT topics of ethical and social significance
  * Privacy and anonymity, difference between both
- * Linked list question
+ * paper 2 Draw UML Diagram but no methods -> figure out if association or inheritance
+ * paper 2 has one question on ethics about the programming and code
+ * paper 2 linked lists together with arrays
  */
 
 import java.util.Scanner;

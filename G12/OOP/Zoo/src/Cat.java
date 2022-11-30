@@ -20,19 +20,19 @@ public class Cat extends Animal
     }
 
     @Override
-        public String toString()
-        {
-            return super.toString() + " | coat = " + coat;
-        }
+    public String toString()
+    {
+        return super.toString() + " | coat = " + coat;
+    }
 
-        public void talk()
-        {
-            System.out.println("Meow");
-        }
+    public void talk()
+    {
+        System.out.println("Meow");
+    }
 
-        public void eat()
-        {
-            System.out.println("Nom Nom");
-        }
+    public void eat()
+    {
+        System.out.println("Nom Nom");
+    }
 }
 

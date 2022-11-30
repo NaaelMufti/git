@@ -11,12 +11,12 @@ public class Time
     public Time(int m)
     {
         this.hours = 0;
-        this.setMinutes(m);
+        this.setMinutes(Math.abs(m));
     }
 
     public Time(int h, int m)
-    {   this.setHours(h);
-        this.setMinutes(m);
+    {   this.setHours(Math.abs(h));
+        this.setMinutes(Math.abs(m));
     }
 
     public int getHours()
@@ -24,10 +24,9 @@ public class Time
         return hours;
     }
 
-
     public void setHours(int hours)
     {
-        Math.abs(hours);
+        hours = Math.abs(hours);
         if (hours > 23)
         {
             hours = hours % 24;
@@ -42,7 +41,7 @@ public class Time
 
     public void setMinutes(int minutes)
     {
-        Math.abs(minutes);
+        minutes = Math.abs(minutes);
         int tempHours = hours;
         if (minutes >= 60)
         {
