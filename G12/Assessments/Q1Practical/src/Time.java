@@ -41,6 +41,11 @@ public class Time
 
     public void setMinutes(int minutes)
     {
+        this.minutes = minutes;
+    }
+/*
+    public void setMinutes(int minutes)
+    {
         minutes = Math.abs(minutes);
         int tempHours = hours;
         if (minutes >= 60)
@@ -51,6 +56,8 @@ public class Time
         this.minutes = minutes;
         this.setHours(tempHours);
     }
+
+     */
 
     public int toMinutes()
     {
