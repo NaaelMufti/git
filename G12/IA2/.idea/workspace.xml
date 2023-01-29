@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a024ec7-56c7-4d1f-b336-158ef19b4c13" name="Changes" comment="" />
+    <list default="true" id="9a951cd1-3dde-4e1d-975f-1b9e2357deff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +23,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2KN2p8OMYKmLMraACKVKTmNbvPh" />
+  <component name="ProjectId" id="2L0YST3tjzQK5WNLJam6KewTyLi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,37 +34,34 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Naael/Documents/GitHub/programming2021/IA-code-resources/IACodeExample&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a024ec7-56c7-4d1f-b336-158ef19b4c13" name="Changes" comment="" />
-      <created>1673800899665</created>
+      <changelist id="9a951cd1-3dde-4e1d-975f-1b9e2357deff" name="Changes" comment="" />
+      <created>1675009467000</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1673800899665</updated>
-      <workItem from="1673800900765" duration="208000" />
-      <workItem from="1675006441845" duration="6000" />
-      <workItem from="1675006459219" duration="1049000" />
-      <workItem from="1675007542991" duration="1215000" />
-      <workItem from="1675008857328" duration="605000" />
-      <workItem from="1675009641823" duration="1526000" />
-      <workItem from="1675022581773" duration="12000" />
-      <workItem from="1675024195680" duration="10000" />
-      <workItem from="1675024228662" duration="780000" />
-      <workItem from="1675025078287" duration="113000" />
-      <workItem from="1675025209389" duration="1980000" />
-      <workItem from="1675027221402" duration="10000" />
-      <workItem from="1675027245256" duration="7000" />
-      <workItem from="1675027271139" duration="4000" />
-      <workItem from="1675028492153" duration="276000" />
+      <updated>1675009467000</updated>
+      <workItem from="1675009468236" duration="171000" />
+      <workItem from="1675011469553" duration="294000" />
+      <workItem from="1675011913183" duration="5585000" />
+      <workItem from="1675017646310" duration="4888000" />
+      <workItem from="1675022594803" duration="794000" />
+      <workItem from="1675024160942" duration="33000" />
+      <workItem from="1675024206858" duration="20000" />
+      <workItem from="1675025193288" duration="15000" />
+      <workItem from="1675027374653" duration="13000" />
+      <workItem from="1675027448109" duration="14000" />
+      <workItem from="1675027622387" duration="17000" />
     </task>
     <servers />
   </component>
@@ -81,5 +78,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
