@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a024ec7-56c7-4d1f-b336-158ef19b4c13" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../IA Test/IA Test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA Test/src/GymTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/IA3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/src/Exercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/src/GymTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/src/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA No Date/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IA No Date/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IA2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA2/GymSessions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../IA2/GymSessions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA2/src/GymTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IA2/src/GymTracker.java" afterDir="false" />
-    </list>
+    <list default="true" id="7a024ec7-56c7-4d1f-b336-158ef19b4c13" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/naael/Desktop/School/IB/Comp Sci /git/G12/IA",
+    "last_opened_file_path": "C:/Users/Naael/Documents/GitHub/git/G12/IA3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +66,7 @@
       <workItem from="1675027271139" duration="4000" />
       <workItem from="1675028492153" duration="276000" />
       <workItem from="1675046466762" duration="1620000" />
+      <workItem from="1675080654087" duration="149000" />
     </task>
     <servers />
   </component>
