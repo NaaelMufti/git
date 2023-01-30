@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7010355-4af2-4551-872a-5fc3dbf30489" name="Changes" comment="" />
+    <list default="true" id="d7010355-4af2-4551-872a-5fc3dbf30489" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../IA Test/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA Test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA Test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA Test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA Test/IA Test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA Test/src/GymTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA3/IA3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA3/src/Exercise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA3/src/GymTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IA3/src/Session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IA2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IA2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IA2/GymSessions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../IA2/GymSessions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IA2/src/GymTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IA2/src/GymTracker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/naael/Desktop/School/IB/Comp Sci /git/G12/IA No Date",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +76,7 @@
       <workItem from="1675027388998" duration="57000" />
       <workItem from="1675027463169" duration="157000" />
       <workItem from="1675027640225" duration="843000" />
+      <workItem from="1675046765591" duration="699000" />
     </task>
     <servers />
   </component>

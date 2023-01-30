@@ -1,10 +1,8 @@
 Date, Exercise, Muscle Group, Weight, Sets, Reps 
 
-A,a,1,2.0,3,4,
-A,b,1,2.0,3,4,
-A,c,1,2.0,3,4,
+1/1/2023,bp,chest,30.0,3,12,
+1/1/2023,flys,chest,40.0,2,10,
+1/1/2023,db press,chest,40.0,4,12,
 
-B,d,1,2.0,3,4,
-B,e,1,2.0,3,4,
-
-C,f,1,2.0,3,4,
+2/1/2023,pulldown,back,40.0,3,10,
+2/1/2023,rows,back,25.0,3,10,

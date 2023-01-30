@@ -21,7 +21,8 @@ public class GymTracker {
             System.out.println("5. Search Exercises");
             System.out.println("6. Sort Exercises");
             System.out.println("7. Export Sessions");
-            System.out.println("8. Exit");
+            System.out.println("8. Load Sessions");
+            System.out.println("9. Exit");
 
             int choice = input.nextInt();
 
@@ -48,6 +49,9 @@ public class GymTracker {
                     exportSessions();
                     break;
                 case 8:
+                    loadSessions();
+                    break;
+                case 9:
                     input.close();
                     System.exit(0);
                     break;
@@ -167,6 +171,44 @@ public class GymTracker {
         System.out.println("Sessions Exported.");
     }
 
+    public static void loadSessions() throws IOException {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter file name: ");
+        String fileName = input.nextLine();
+
+        File file = new File(fileName);
+        Scanner fileInput = new Scanner(file);
+
+        while (fileInput.hasNextLine()) {
+            String line = fileInput.nextLine();
+            String[] parts = line.split(",");
+            String date = parts[0];
+            String exerciseName = parts[1];
+            String muscleGroup = parts[2];
+            double weight = Double.parseDouble(parts[3]);
+            int sets = Integer.parseInt(parts[4]);
+            int reps = Integer.parseInt(parts[5]);
+
+            Exercise exercise = new Exercise(exerciseName, muscleGroup, weight, sets, reps);
+            Session session = new Session(date, new ArrayList<Exercise>());
+
+            boolean found = false;
+            for (Session s : sessions) {
+                if (s.getDate().equals(date)) {
+                    s.getExercises().add(exercise);
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                session.getExercises().add(exercise);
+                sessions.add(session);
+            }
+        }
+        System.out.println("Sessions loaded successfully.");
+        fileInput.close();
+    }
 }
 
 class Exercise {
