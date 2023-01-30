@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a951cd1-3dde-4e1d-975f-1b9e2357deff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../IA Test/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA Test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA Test/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA Test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA Test/IA Test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA Test/src/GymTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/IA3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/src/Exercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/src/GymTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IA3/src/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA No Date/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IA No Date/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GymSessions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/GymSessions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GymTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GymTracker.java" afterDir="false" />
-    </list>
+    <list default="true" id="9a951cd1-3dde-4e1d-975f-1b9e2357deff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
