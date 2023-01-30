@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Naael/Documents/GitHub/git/G12/IA3/src</OriginalElement>
+  <nodes>
+    <node x="522.4829661804865" y="60.60513657729865">Date</node>
+    <node x="-80.77076072928394" y="248.46095918341751">Session</node>
+    <node x="234.6009574833064" y="70.12871577923329">Exercise</node>
+    <node x="39.74996044279743" y="-21.087436473257362">GymTracker</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Session" target="Date" relationship="TO_ONE">
+      <point x="0.0" y="139.1880290205564" />
+      <point x="35.729239270716064" y="588.3444747510148" />
+      <point x="-109.23155985489731" y="244.50777831881888" />
+    </edge>
+    <edge source="Session" target="Date" relationship="CREATE">
+      <point x="-15.00000000000002" y="139.1880290205564" />
+      <point x="20.729239270716043" y="603.436742594082" />
+      <point x="-109.23155985489731" y="259.6000461618861" />
+    </edge>
+    <edge source="GymTracker" target="Session" relationship="TO_MANY">
+      <point x="-32.50698416663067" y="40.23155985489723" />
+      <point x="83.47453613106399" y="121.88446389437874" />
+      <point x="35.729239270716064" y="121.88446389437874" />
+      <point x="0.0" y="-139.1880290205564" />
+    </edge>
+    <edge source="Session" target="Exercise" relationship="TO_MANY">
+      <point x="116.50033993121878" y="-3.4749279494448944E-4" />
+      <point x="174.0" y="387.6486407111788" />
+      <point x="174.0" y="265.36056417545757" />
+      <point x="-128.23143830876975" y="2.8854132703850697E-4" />
+    </edge>
+    <edge source="GymTracker" target="Exercise" relationship="TO_MANY">
+      <point x="76.2312885333325" y="5.6814556394980357E-5" />
+      <point x="174.0" y="19.14418019619626" />
+      <point x="174.0" y="265.36056417545757" />
+      <point x="-128.23143830876975" y="2.8854132703850697E-4" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="357.0" y="335.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

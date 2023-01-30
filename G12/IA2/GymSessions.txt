@@ -1,6 +1,0 @@
-29/1/2023:
-[Name: a, Muscle Group: chest, Weight: 40.0, Sets: 20, Reps: 21, Name: b, Muscle Group: 20, Weight: 20.0, Sets: 10, Reps: 23]
-
-30/1/2023:
-[Name: c, Muscle Group: back, Weight: 2.0, Sets: 4, Reps: 5, Name: d, Muscle Group: back, Weight: 2.0, Sets: 4, Reps: 23]
-
