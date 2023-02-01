@@ -26,7 +26,7 @@ public class GymTracker implements Serializable
 
             int choice = IBIO.inputInt();
 
-            switch (choice)
+            switch (choice) // main menu
             {
                 case 1:
                     Exercise.addExercise();

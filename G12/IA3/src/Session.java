@@ -3,29 +3,24 @@ import java.util.ArrayList;
 import java.io.Serializable;
 
 
-class Session implements Serializable
-{
+class Session implements Serializable {
     private Date date;
     private static ArrayList<Exercise> exercises;
 
-    public Session(Date date, ArrayList<Exercise> exercises)
-    {
+    public Session(Date date, ArrayList<Exercise> exercises) {
         this.date = date;
         this.exercises = exercises;
     }
 
-    public Date getDate()
-    {
+    public Date getDate() {
         return date;
     }
 
-    public ArrayList<Exercise> getExercises()
-    {
+    public ArrayList<Exercise> getExercises() {
         return exercises;
     }
 
-    public static void addSession()
-    {
+    public static void addSession() {
 
         Date date = new Date(); // using Date data type from Date class
 
@@ -56,36 +51,30 @@ class Session implements Serializable
         int y = IBIO.inputInt("Enter the year (XXXX format): ");
 
         try {
-            date.setDate(d,m,y);
-        } catch (Exception e)
-        {
+            date.setDate(d, m, y);
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
         ArrayList<Exercise> sessionExercises = new ArrayList<Exercise>();
 
-        while (true)
-        {
+        while (true) {
 
             String exerciseName = IBIO.inputString("Enter exercise name (or '0' to finish): ");
 
-            if (exerciseName.equalsIgnoreCase("0"))
-            {
+            if (exerciseName.equalsIgnoreCase("0")) {
                 break;
             }
 
-            boolean found = false;
-            for (Exercise exercise : GymTracker.exercises)
-            {
-                if (exercise.getName().equalsIgnoreCase(exerciseName))
-                {
+            boolean found = false; // check if the exercise can be found
+            for (Exercise exercise : GymTracker.exercises) {
+                if (exercise.getName().equalsIgnoreCase(exerciseName)) {
                     sessionExercises.add(exercise);
                     found = true;
                     break;
                 }
             }
-            if (!found)
-            {
+            if (!found) {
                 System.out.println("Exercise not found. Please try again.");
             }
         }
@@ -95,18 +84,16 @@ class Session implements Serializable
     }
 
 
-
-    public static void viewSessions()
-    {
+    public static void viewSessions() {
         for (Session session : GymTracker.sessions) {
             System.out.println(session);
         }
     }
 
-    public static void saveSessions()
+    public static void saveSessions() // serialization
     {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("GymSessions.ser")))
-        {
+        // you can change the file name here AND in the loadSessions method if you want to change the name of the file
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("GymSessions.ser"))) {
             oos.writeObject(GymTracker.sessions);
             System.out.println("Sessions saved successfully.");
         } catch (Exception e) {
@@ -115,44 +102,38 @@ class Session implements Serializable
         }
     }
 
-    public static void loadSessions()
-    {
-        try
-        {
-            FileInputStream fileIn = new FileInputStream("GymSessions.ser");
+    public static void loadSessions() {
+        try {
+            FileInputStream fileIn = new FileInputStream("GymSessions.ser"); // change file name here
             ObjectInputStream in = new ObjectInputStream(fileIn);
             GymTracker.sessions = (ArrayList<Session>) in.readObject();
             in.close();
             fileIn.close();
-        } catch (IOException i)
-        {
+        } catch (IOException i) {
             i.printStackTrace();
             return;
-        } catch (ClassNotFoundException c)
-        {
+        } catch (ClassNotFoundException c) {
             System.out.println("Session class not found");
             c.printStackTrace();
             return;
         }
         System.out.println("Sessions Loaded");
-        try
-        {
+        try {
             GymTracker.main(null); // call main method after loading the sessions
-        } catch (IOException e)
-        {
+        } catch (IOException e) {
             throw new RuntimeException(e);
-        } catch (ClassNotFoundException e)
-        {
+        } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
 
-
     @Override
-    public String toString() {
+    public String toString()
+    {
         StringBuilder sb = new StringBuilder();
         sb.append("Date: " + date + "\n");
-        for (Exercise exercise : exercises) {
+        for (Exercise exercise : exercises)
+        {
             sb.append(exercise + "\n");
         }
         return sb.toString();
