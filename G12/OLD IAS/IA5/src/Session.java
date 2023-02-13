@@ -1,18 +1,16 @@
 import java.io.*;
 import java.util.ArrayList;
-import java.io.Serializable;
-
 
 class Session implements Serializable {
-    private Date date;
-    private static ArrayList<Exercise> exercises;
+    private String date;
+    private ArrayList<Exercise> exercises;
 
-    public Session(Date date, ArrayList<Exercise> exercises) {
+    public Session(String date, ArrayList<Exercise> exercises) {
         this.date = date;
         this.exercises = exercises;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
@@ -20,61 +18,34 @@ class Session implements Serializable {
         return exercises;
     }
 
-    public static void addSession() {
+    public static void addSession()
+    {
 
-        Date date = new Date(); // using Date data type from Date class
-
-        // instantiate outside of while loop
-        int d;
-        int m;
-
-        while (true) // validate date entered is between 1 and 31
-        {
-            d = IBIO.inputInt("Enter the day of the month: ");
-            if (d < 1 || d > 31) {
-                System.out.println("Invalid day. Enter a value between 1 and 31.");
-                continue;
-            }
-            break;
-        }
-
-        while (true) // validate month entered is between 1 and 12
-        {
-            m = IBIO.inputInt("Enter the month of the year (numeric): ");
-            if (m < 1 || m > 12) {
-                System.out.println("Invalid month. Enter a value between 1 and 12.");
-                continue;
-            }
-            break;
-        }
-
-        int y = IBIO.inputInt("Enter the year (XXXX format): ");
-
-        try {
-            date.setDate(d, m, y);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        String date = IBIO.inputString("Enter session date: ");
 
         ArrayList<Exercise> sessionExercises = new ArrayList<Exercise>();
+        while (true)
+        {
 
-        while (true) {
+            String exerciseName = IBIO.inputString("Enter exercise name (or 'q' to finish): ");
 
-            String exerciseName = IBIO.inputString("Enter exercise name (or '0' to finish): ");
-
-            if (exerciseName.equalsIgnoreCase("0")) {
+            if (exerciseName.equalsIgnoreCase("q"))
+            {
                 break;
             }
 
-            boolean found = false; // check if the exercise can be found
-            for (Exercise exercise : GymTracker.exercises) {
-                if (exercise.getName().equalsIgnoreCase(exerciseName)) {
+            boolean found = false;
+            for (Exercise exercise : GymTracker.exercises)
+            {
+                if (exercise.getName().equalsIgnoreCase(exerciseName))
+                {
                     sessionExercises.add(exercise);
                     found = true;
                     break;
                 }
             }
-            if (!found) {
+            if (!found)
+            {
                 System.out.println("Exercise not found. Please try again.");
             }
         }
@@ -84,7 +55,9 @@ class Session implements Serializable {
     }
 
 
-    public static void viewSessions() {
+
+    public static void viewSessions()
+    {
         for (Session session : GymTracker.sessions) {
             System.out.println(session);
         }
@@ -93,7 +66,8 @@ class Session implements Serializable {
     public static void saveSessions() // serialization
     {
         // you can change the file name here AND in the loadSessions method if you want to change the name of the file
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("GymSessions.ser"))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("GymSessions.ser")))
+        {
             oos.writeObject(GymTracker.sessions);
             System.out.println("Sessions saved successfully.");
         } catch (Exception e) {
@@ -102,7 +76,8 @@ class Session implements Serializable {
         }
     }
 
-    public static void loadSessions() {
+    public static void loadSessions()
+    {
         try {
             FileInputStream fileIn = new FileInputStream("GymSessions.ser"); // change file name here
             ObjectInputStream in = new ObjectInputStream(fileIn);
@@ -118,7 +93,8 @@ class Session implements Serializable {
             return;
         }
         System.out.println("Sessions Loaded");
-        try {
+        try
+        {
             GymTracker.main(null); // call main method after loading the sessions
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -128,12 +104,10 @@ class Session implements Serializable {
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Date: " + date + "\n");
-        for (Exercise exercise : exercises)
-        {
+        for (Exercise exercise : exercises) {
             sb.append(exercise + "\n");
         }
         return sb.toString();

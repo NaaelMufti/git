@@ -1,15 +1,14 @@
 import java.io.Serializable;
+import java.util.Scanner;
 
-class Exercise implements Serializable
-{
+class Exercise implements Serializable {
     private String name;
     private String muscleGroup;
     private double weight;
     private int sets;
     private int reps;
 
-    public Exercise(String name, String muscleGroup, double weight, int sets, int reps)
-    {
+    public Exercise(String name, String muscleGroup, double weight, int sets, int reps) {
         this.name = name;
         this.muscleGroup = muscleGroup;
         this.weight = weight;
@@ -17,28 +16,23 @@ class Exercise implements Serializable
         this.reps = reps;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public String getMuscleGroup()
-    {
+    public String getMuscleGroup() {
         return muscleGroup;
     }
 
-    public double getWeight()
-    {
+    public double getWeight() {
         return weight;
     }
 
-    public int getSets()
-    {
+    public int getSets() {
         return sets;
     }
 
-    public int getReps()
-    {
+    public int getReps() {
         return reps;
     }
 
@@ -47,7 +41,7 @@ class Exercise implements Serializable
 
         String name = IBIO.inputString("Enter exercise name: ");
         String muscleGroup = IBIO.inputString("Enter muscle group: ");
-        double weight = IBIO.inputDouble("Enter weight/resistance (kg): ");
+        double weight = IBIO.inputDouble("Enter weight/resistance: ");
         int sets = IBIO.inputInt("Enter number of sets: ");
         int reps = IBIO.inputInt("Enter number of reps: ");
 
@@ -59,14 +53,14 @@ class Exercise implements Serializable
 
     public static void viewExercises()
     {
-        for (Exercise exercise : GymTracker.exercises)
-        {
+        for (Exercise exercise : GymTracker.exercises) {
             System.out.println(exercise);
         }
     }
 
     public static void searchExercises()
     {
+        Scanner input = new Scanner(System.in);
         String name = IBIO.inputString("Enter exercise name: ");
 
         for (Exercise exercise : GymTracker.exercises)
@@ -78,10 +72,9 @@ class Exercise implements Serializable
         }
     }
 
-    public static void sortExercises() // sort using Selection Sort
+    public static void sortExercises()
     {
         int n = GymTracker.exercises.size();
-
         for (int i = 0; i < n-1; i++)
         {
             int minIndex = i;
@@ -92,7 +85,7 @@ class Exercise implements Serializable
                     minIndex = j;
                 }
             }
-            Exercise temp = GymTracker.exercises.get(minIndex); // temporary variable used to swap exercises
+            Exercise temp = GymTracker.exercises.get(minIndex);
             GymTracker.exercises.set(minIndex, GymTracker.exercises.get(i));
             GymTracker.exercises.set(i, temp);
         }
@@ -104,4 +97,3 @@ class Exercise implements Serializable
         return "Name: " + name + ", Muscle Group: " + muscleGroup + ", Weight: " + weight + ", Sets: " + sets + ", Reps: " + reps;
     }
 }
-
