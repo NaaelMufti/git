@@ -1,11 +1,11 @@
 public class NPC extends GameCharacter
 {
     private boolean isEnemy;
-    
+
     public NPC(boolean isEnemy)
     {
+        super(charCounter);
         this.isEnemy = isEnemy;
-        GameCharacter.charCounter++;
     }
 
     public boolean isEnemy()

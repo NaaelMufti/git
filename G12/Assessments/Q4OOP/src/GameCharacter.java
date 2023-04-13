@@ -13,6 +13,10 @@ public class GameCharacter
 
     }
 
+    public GameCharacter(int charCounter)
+    {
+        this.charCounter = charCounter;
+    }
     public GameCharacter(String name, int health, int attackPower, int charCounter)
     {
         this.name = name;
@@ -20,6 +24,8 @@ public class GameCharacter
         this.attackPower = attackPower;
         this.charCounter = charCounter;
     }
+
+
 
     public String getName()
     {

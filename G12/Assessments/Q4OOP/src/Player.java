@@ -5,8 +5,8 @@ public class Player extends GameCharacter
 
     public Player(int xp)
     {
+        super(charCounter);
         this.xp = xp;
-        GameCharacter.charCounter++;
     }
 
     public int getXp()

@@ -43,4 +43,10 @@ public class Interaction
             }
         }
     }
+
+    @Override
+    public String toString()
+    {
+        return "Interaction{" + "player=" + player + ", npcs=" + npcs + '}';
+    }
 }
