@@ -5,10 +5,6 @@ public class Interaction
     private Player player;
     private ArrayList<NPC> npcs = new ArrayList<>();
 
-    public Interaction()
-    {
-
-    }
 
     public Interaction(Player player, ArrayList<NPC> npcs)
     {
@@ -32,13 +28,18 @@ public class Interaction
         this.npcs = npcs;
     }
 
+    public int size()
+    {
+        return npcs.size();
+    }
+
     public void outcome(NPC npc)
     {
         if(npc.isEnemy()) // is an Enemy so fight
         {
             if(npc.getHealth() < player.getAttackPower()) // greater AP then health so win
             {
-
+                player.addXP();
             }
         }
     }

@@ -3,10 +3,10 @@ import java.util.ArrayList;
 
 public class GameCharacter
 {
+    protected static int charCounter;
     private String name;
     private int health;
     private int attackPower;
-    private int charCounter;
 
     public GameCharacter()
     {
@@ -46,11 +46,15 @@ public class GameCharacter
         this.attackPower = attackPower;
     }
 
-    public int getCharCounter() {
+    public static int getCharCounter()
+    {
         return charCounter;
     }
 
-    public void setCharCounter(int charCounter) {
-        this.charCounter = charCounter;
+    @Override
+    public String toString()
+    {
+        return "GameCharacter{" + "name='" + name + '\'' + ", health=" + health + ", attackPower=" + attackPower +
+                ", charCounter=" + charCounter + '}';
     }
 }

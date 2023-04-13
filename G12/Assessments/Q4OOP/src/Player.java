@@ -2,14 +2,11 @@ public class Player extends GameCharacter
 {
     private int xp;
 
-    public Player()
-    {
-
-    }
 
     public Player(int xp)
     {
         this.xp = xp;
+        GameCharacter.charCounter++;
     }
 
     public int getXp()
@@ -24,7 +21,12 @@ public class Player extends GameCharacter
 
     public void addXP()
     {
+        xp = xp+1;
+    }
 
-
+    @Override
+    public String toString()
+    {
+        return super.toString() + " Player{ xp = " + xp;
     }
 }

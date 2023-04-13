@@ -1,14 +1,11 @@
 public class NPC extends GameCharacter
 {
     private boolean isEnemy;
-
-    public NPC()
-    {
-
-    }
+    
     public NPC(boolean isEnemy)
     {
         this.isEnemy = isEnemy;
+        GameCharacter.charCounter++;
     }
 
     public boolean isEnemy()
@@ -19,11 +16,12 @@ public class NPC extends GameCharacter
     public void setEnemy(boolean enemy)
     {
         isEnemy = enemy;
+
     }
 
     @Override
     public String toString()
     {
-        return "NPC{" + "isEnemy=" + isEnemy + '}';
+        return super.toString() + " NPC{ is Enemy= " + isEnemy;
     }
 }
