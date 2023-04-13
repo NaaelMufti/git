@@ -23,6 +23,11 @@ public class Square extends Shape
         return side * side;
     }
 
+    public double compareTo(Shape s)
+    {
+        return this.getArea() - s.getArea();
+    }
+
     @Override
     public String toString()
     {

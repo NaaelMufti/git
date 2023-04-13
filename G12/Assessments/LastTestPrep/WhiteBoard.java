@@ -4,7 +4,10 @@ public class WhiteBoard
 {
     private ArrayList<Shape> shapes = new ArrayList<>();
 
-    public WhiteBoard() { }
+    public WhiteBoard()
+    {
+
+    }
 
     public WhiteBoard(ArrayList<Shape> shapes)
     {

@@ -41,6 +41,11 @@ public class Rectangle extends Shape
                 + " side2 = " + side2 + " Area = " + getArea();
     }
 
+    public double compareTo(Shape s)
+    {
+        return this.getArea() - s.getArea();
+    }
+
     public static void main(String[] args)
     {
         Rectangle r = new Rectangle("R", 5,3);

@@ -1,4 +1,4 @@
-public class Shape
+public abstract class Shape
 {
     private String name;
 
@@ -17,15 +17,9 @@ public class Shape
         this.name = name;
     }
 
-    public double getArea()
-    {
-        return 0;
-    }
+    public abstract double getArea();
 
-    public double compareTo(Shape s)
-    {
-        return this.getArea() - s.getArea();
-    }
+    public abstract double compareTo(Shape s); // since abstract no need { }
 
     @Override
     public String toString()

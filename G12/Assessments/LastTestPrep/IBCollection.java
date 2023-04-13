@@ -12,7 +12,7 @@
  * 
  */
  
-public class IBCollection <T>
+public class IBCollection <T> // generic so it can accept any data type
 {
 	Element start;
 	Element current;

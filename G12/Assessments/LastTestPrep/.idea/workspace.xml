@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="089a2ca6-355e-4cb2-b612-93194ff670a7" name="Changes" comment="" />
+    <list default="true" id="089a2ca6-355e-4cb2-b612-93194ff670a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Q4OOP/Q4OOP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4OOP/src/GameCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4OOP/src/Interaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4OOP/src/NPC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4OOP/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IBCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/IBCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhiteBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/WhiteBoard.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,8 +45,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Naael/Documents/GitHub/git/G12/Assessments/LastTestPrep",
+    "last_opened_file_path": "/Users/naael/Desktop/School/IB/Comp Sci /git/G12/Assessments/LastTestPrep",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681316978335</updated>
       <workItem from="1681316979208" duration="421000" />
+      <workItem from="1681346534785" duration="2658000" />
     </task>
     <servers />
   </component>
