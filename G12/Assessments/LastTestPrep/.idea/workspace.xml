@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="089a2ca6-355e-4cb2-b612-93194ff670a7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q4OOP/src/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Q4OOP/src/GameCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q4OOP/src/Interaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Q4OOP/src/Interaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q4OOP/src/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Q4OOP/src/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q4OOP/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Q4OOP/src/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681316978335</updated>
       <workItem from="1681316979208" duration="421000" />
-      <workItem from="1681346534785" duration="4290000" />
+      <workItem from="1681346534785" duration="4445000" />
     </task>
     <servers />
   </component>
